@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>Segurança Digital com Matemática</title>
+        <style>
+            body {
+                  font-family: 'Segoe UI', sans-serif;
+                        background-color: #f4f6f9;
+                              color: #222;
+                                    padding: 20px;
+                                          max-width: 800px;
+                                                margin: auto;
+                                                    }
+
+                                                        h1, h2 {
+                                                              color: #2b2d42;
+                                                                  }
+
+                                                                      code {
+                                                                            background-color: #e6e6e6;
+                                                                                  padding: 2px 6px;
+                                                                                        border-radius: 5px;
+                                                                                              font-family: monospace;
+                                                                                                  }
+
+                                                                                                      .box {
+                                                                                                            background: #fff;
+                                                                                                                  padding: 20px;
+                                                                                                                        border-radius: 12px;
+                                                                                                                              box-shadow: 0 0 12px rgba(0, 0, 0, 0.05);
+                                                                                                                                    margin-bottom: 20px;
+                                                                                                                                        }
+
+                                                                                                                                            footer {
+                                                                                                                                                  text-align: center;
+                                                                                                                                                        font-size: 0.9em;
+                                                                                                                                                              margin-top: 40px;
+                                                                                                                                                                    color: #555;
+                                                                                                                                                                        }
+                                                                                                                                                                          </style>
+                                                                                                                                                                          </head> <link rel="stylesheet" href="style.css" />
+                                                                                                                                                                          
+                                                                                                                                                                          <body>
+
+                                                                                                                                                                            <div class="box">
+                                                                                                                                                                                <h1>🔐 Segurança Digital com Matemática</h1>
+                                                                                                                                                                                    <p>
+                                                                                                                                                                                          Este projeto foi desenvolvido para demonstrar como a <strong>matemática</strong> pode ser usada para melhorar a <strong>segurança digital</strong>, criando senhas fortes e analisando combinações com conceitos de análise combinatória.
+                                                                                                                                                                                              </p>
+                                                                                                                                                                                                </div>
+
+                                                                                                                                                                                                  <div class="box">
+                                                                                                                                                                                                      <h2>📌 Objetivo</h2>
+                                                                                                                                                                                                          <ul>
+                                                                                                                                                                                                                <li>Gerar senhas seguras com Python</li>
+                                                                                                                                                                                                                      <li>Calcular combinações possíveis com análise combinatória</li>
+                                                                                                                                                                                                                            <li>Conscientizar sobre boas práticas de segurança digital</li>
+                                                                                                                                                                                                                                </ul>
+                                                                                                                                                                                                                                  </div>
+
+                                                                                                                                                                                                                                    <div class="box">
+                                                                                                                                                                                                                                        <h2>📄 Código Python (resumo)</h2>
+                                                                                                                                                                                                                                            <pre><code>import random
+                                                                                                                                                                                                                                            import string
+
+                                                                                                                                                                                                                                            def gerar_senha(tamanho):
+                                                                                                                                                                                                                                                caracteres = string.ascii_letters + string.digits + string.punctuation
+                                                                                                                                                                                                                                                    senha = ''.join(random.choice(caracteres) for _ in range(tamanho))
+                                                                                                                                                                                                                                                        return senha
+                                                                                                                                                                                                                                                        </code></pre>
+                                                                                                                                                                                                                                                          </div>
+
+                                                                                                                                                                                                                                                            <div class="box">
+                                                                                                                                                                                                                                                                <h2>📚 Conceito Matemático</h2>
+                                                                                                                                                                                                                                                                    <p>
+                                                                                                                                                                                                                                                                          Fórmula usada para calcular o número de combinações possíveis de uma senha:
+                                                                                                                                                                                                                                                                              </p>
+                                                                                                                                                                                                                                                                                  <p><code>total_de_combinacoes = n_caracteres ** tamanho_da_senha</code></p>
+                                                                                                                                                                                                                                                                                      <p>Quanto maior o número de combinações, mais difícil será quebrar a senha.</p>
+                                                                                                                                                                                                                                                                                        </div>
+
+                                                                                                                                                                                                                                                                                          <footer>
+                                                                                                                                                                                                                                                                                              Projeto criado por alunos do 3º ano do Ensino Médio – 2025
+                                                                                                                                                                                                                                                                                                </footer>
+
+                                                                                                                                                                                                                                                                                                </body> <div class="box">
+                                                                                                                                                                                                                                                                                                      <h2>🔐 Senha Gerada</h2>
+                                                                                                                                                                                                                                                                                                        <p><strong id="senha">...</strong></p>
+                                                                                                                                                                                                                                                                                                          <p>Combinações possíveis: <strong id="combinacoes">...</strong></p>
+                                                                                                                                                                                                                                                                                                          </div>
+                                                                                                                                                                                                                                                                                
+                                                                                                                                                                                                                                                                        
+                                                                                                                                                                                                                                                                                            </html>
+                                                                                                                                                                                                                                                                                        
